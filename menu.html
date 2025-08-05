@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>ZéCaneco</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      background-image: url("IMG/Background-Menu.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      font-family: 'Fredericka the Great', cursive;
+      display: flex;
+      justify-content: flex-start; /* para ficar um pouco pra esquerda */
+      align-items: center;
+      padding-left: 30%; /* ajusta o quanto pra esquerda */
+      color: white;
+    }
+    .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+    label {
+      cursor: pointer;
+      font-size: 3rem;
+      user-select: none;
+      padding: 0;
+      margin: 0;
+      color: white;
+      transition: color 0.3s ease;
+    }
+    label:hover {
+      color: #ffdd57;
+      text-shadow: 0 0 10px #ffdd57;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu">
+    <label onclick="alert('Começar o jogo!')">Start</label>
+    <label onclick="alert('Abrir opções')">Options</label>
+    <label onclick="alert('Mostrar créditos')">Credits</label>
+    <label onclick="alert('Sair do jogo')">Exit</label>
+  </div>
+</body>
+</html>
